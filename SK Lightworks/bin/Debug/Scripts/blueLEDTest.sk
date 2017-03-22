@@ -1,0 +1,45 @@
+# SK Lightworks Red Test Script v1.0.0
+# Programmed by Andrew Mussey
+# SK: 2.0.1.0
+globalwait 50
+
+blue 1 1
+blue 2 1
+blue 3 1
+blue 4 1
+blue 5 1
+blue 6 1
+blue 7 1
+blue 8 1
+
+blue 1 0
+blue 2 0
+blue 3 0
+blue 4 0
+blue 5 0
+blue 6 0
+blue 7 0
+blue 8 0
+
+blue 8 1
+blue 7 1
+blue 6 1
+blue 5 1
+blue 4 1
+blue 3 1
+blue 2 1
+blue 1 1
+
+blue 8
+blue 7
+blue 6
+blue 5
+blue 4
+blue 3
+blue 2
+blue 1
+
+wait 200
+blueall
+wait 200
+blueall

@@ -1,0 +1,45 @@
+# SK Lightworks Yellow Test Script v1.0.0
+# Programmed by Andrew Mussey
+# SK: 2.0.1.0
+globalwait 50
+
+yellow 1 1
+yellow 2 1
+yellow 3 1
+yellow 4 1
+yellow 5 1
+yellow 6 1
+yellow 7 1
+yellow 8 1
+
+yellow 1 0
+yellow 2 0
+yellow 3 0
+yellow 4 0
+yellow 5 0
+yellow 6 0
+yellow 7 0
+yellow 8 0
+
+yellow 8 1
+yellow 7 1
+yellow 6 1
+yellow 5 1
+yellow 4 1
+yellow 3 1
+yellow 2 1
+yellow 1 1
+
+yellow 8
+yellow 7
+yellow 6
+yellow 5
+yellow 4
+yellow 3
+yellow 2
+yellow 1
+
+wait 200
+yellowall
+wait 200
+yellowall

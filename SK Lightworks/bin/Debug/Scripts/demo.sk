@@ -1,0 +1,151 @@
+# SK Lightworks Demo Script v1.0.0
+# Programmed by Andrew Mussey
+
+
+# First things first: Blank lines and lines with # are ignored.
+# Furthermore, anything past the command's usual parameters is ignored,
+# with a couple exceptions we'll cover below.
+#
+# None of the commands are case sensitive.
+
+
+# Global wait defaults to zero unless set.
+# The global wait determines how long of a pause takes place after
+# each command.
+#
+# Parameters:
+#    globalwait <time in ms>
+globalwait 50
+
+
+# In order to turn on the LED's, you have to do them individually.
+# There are 4 colors of LED's: red, yellow, blue, and green.
+# Each color has 8 LED's, starting at 1 around the 12 o'clock position and 
+# circling clockwise.
+# Each LED can be set in a different state of on (1) or off (0).  If no state is specified,
+# the state is inverted (if it's on, it goes off).
+#
+# Parameters:
+#    <color [red blue green yellow]> <light number [1 2 3 4 5 6 7 8]> [<state [1 0]>]
+yellow 1 1
+yellow 2 1
+yellow 3 1
+yellow 4 1
+yellow 5
+yellow 6
+yellow 7
+yellow 8
+
+
+# The wait command pauses for a set period of time.
+# It is also subject to the global wait time.
+# Parameters:
+#    wait <time in ms>
+wait 50
+
+
+
+blue 1 1
+blue 2 1
+blue 3 1
+blue 4 1
+blue 5
+blue 6
+blue 7
+blue 8
+wait 50
+red 1 1
+red 2 1
+red 3 1
+red 4 1
+red 5
+red 6
+red 7
+red 8
+wait 50
+green 1 1
+green 2 1
+green 3 1
+green 4 1
+green 5
+green 6
+green 7
+green 8
+wait 50
+
+globalwait 50
+yellow 1 0
+yellow 2 0
+yellow 3 0
+yellow 4 0
+yellow 5
+yellow 6
+yellow 7
+yellow 8
+wait 50
+blue 1 0
+blue 2 0
+blue 3 0
+blue 4 0
+blue 5
+blue 6
+blue 7
+blue 8
+wait 50
+
+wait 50
+green 1 0
+green 2 0
+green 3 0
+green 4 0
+green 5
+green 6
+green 7
+green 8
+wait 50
+
+
+
+
+globalwait 1000
+
+# The strobe has 4 speeds (denoted by 0-4, 0 being off, 4 being the fastest).
+# Parameters:
+#    strobe <speed [0 1 2 3 4]>
+strobe 0
+strobe 1
+strobe 2
+strobe 3
+strobe 4
+strobe 0
+
+# The fog command will turn on the fog machine until the time runs out.  It will
+# pause the execution of the rest of the program, so small bursts may be preferable. 
+# Parameters:
+#    fog <time in ms>
+fog 50
+
+wait 2000
+globalwait 500
+
+
+# <color>all changes the settings for all of the LEDs of that color.
+# Parameters:
+#    <color [red blue green yellow]>all [<state [1 0]>]
+redall 1
+blueall 1
+greenall
+yellowall
+yellowall
+greenall
+blueall
+redall
+
+# killall terminates all existing operations, with the exception of fog, which will run until the timer is done.
+# Parameters:
+#    killall
+killall
+
+# If a kill all is not issued at the end, the last lights will stay on.
+# This is provided as an option for effects.
+
